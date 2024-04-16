@@ -35,8 +35,8 @@ use sixel_tokenizer::{ColorCoordinateSystem, Parser};
 
 #[derive(Debug, Clone)]
 pub struct SixelImage {
-    color_registers: BTreeMap<u16, SixelColor>,
-    pixels: Vec<Vec<Pixel>>,
+    pub color_registers: BTreeMap<u16, SixelColor>,
+    pub pixels: Vec<Vec<Pixel>>,
 }
 
 impl SixelImage {
