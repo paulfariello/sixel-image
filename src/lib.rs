@@ -87,8 +87,8 @@ impl SixelImage {
 
 #[derive(Clone, Copy)]
 pub struct Pixel {
-    on: bool,
-    color: u16, 
+    pub on: bool,
+    pub color: u16,
 }
 
 impl fmt::Debug for Pixel {
